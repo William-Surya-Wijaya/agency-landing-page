@@ -73,7 +73,7 @@ const Hero = () => {
 
       {/* Main Image */}
       <div className="relative mt-12 flex align-center justify-center">
-      <div className="absolute max-w-4xl mx-auto p-6 border -mt-6 bg-white rounded-2xl bg-gradient-to-r from-teal-50 to-blue-50 opacity-50">
+      <div className="absolute max-w-4xl mx-auto p-6 border-2 -mt-6 bg-white rounded-2xl bg-gradient-to-r from-teal-50 to-blue-50 opacity-50">
           <div className="relative">
             <img
               src="https://via.placeholder.com/800x400"
