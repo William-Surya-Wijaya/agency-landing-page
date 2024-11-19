@@ -6,7 +6,7 @@ const Features = () => {
     ];
   
     return (
-      <section id="features" className="py-16 bg-gray-100 text-center">
+      <section id="features" className="relative -mt-24 py-16 bg-gray-100 text-center">
         <h2 className="text-3xl font-bold mb-8">Features</h2>
         <div className="grid md:grid-cols-3 gap-8 max-w-screen-lg mx-auto px-6">
           {features.map((feature, index) => (

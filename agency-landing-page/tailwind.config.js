@@ -14,10 +14,28 @@ module.exports = {
           "50%": { transform: "scale(0.9)" },
           "100%": { transform: "scale(1)" },
         },
+        paperplane: {
+          "0%, 100%": { transform: "rotate(-5deg)" },
+          "50%": { transform: "rotate(5deg)" },
+        },
+        wind: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "0%, 100%": { transform: "translateX(0)" },
+          "25%": { transform: "translateX(-40px)" },
+          "75%": { transform: "translateX(-120px)" },
+          "50%": { transform: "translateY(40px)" },
+        },
+        spinInfinite: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
       },
       animation: {
         "bounce-idle": "bounceIdle 2s infinite",
         press: "press 0.3s ease-out",
+        paperplane: "paperplane 4s ease-in-out infinite",
+        wind: "wind 42s ease-in-out infinite",
+        spinInfinite: "spinInfinite 28s linear infinite",
       },
     },
   },

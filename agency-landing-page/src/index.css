@@ -24,3 +24,38 @@ body {
   min-height: 100vh;
   position: relative;
 }
+
+.pattern-square-position{
+  top: 40%;
+  right: 18%;
+}
+
+.pattern-circle-position{
+  bottom: 1px;
+  left: 18%;
+}
+
+.paperplane-right-position{
+  top: 50%;
+  right: 12%;
+}
+
+.paperplane-left-position{
+  top: 50%;
+  left: 13%;
+}
+
+.waves-position{
+  top: 44%;
+  left: 30%;
+}
+
+.left-top-icon-position{
+  top: 12%;
+  left: 12%;
+}
+
+.right-top-icon-position{
+  top: 16%;
+  right: 12%;
+}
