@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/agency-landing-page/static/css/main.996c8933.css",
-    "main.js": "/agency-landing-page/static/js/main.8fa4f7c8.js",
+    "main.css": "/agency-landing-page/static/css/main.07346015.css",
+    "main.js": "/agency-landing-page/static/js/main.6a5d4f36.js",
     "static/js/453.a6264939.chunk.js": "/agency-landing-page/static/js/453.a6264939.chunk.js",
     "static/media/bootstrap-icons.woff?": "/agency-landing-page/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/bootstrap-icons.woff2?": "/agency-landing-page/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
@@ -15,12 +15,12 @@
     "static/media/paperplane-right.svg": "/agency-landing-page/static/media/paperplane-right.2ddd75622abd728a5e0651f7dcbd9768.svg",
     "static/media/slick.woff": "/agency-landing-page/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/agency-landing-page/index.html",
-    "main.996c8933.css.map": "/agency-landing-page/static/css/main.996c8933.css.map",
-    "main.8fa4f7c8.js.map": "/agency-landing-page/static/js/main.8fa4f7c8.js.map",
+    "main.07346015.css.map": "/agency-landing-page/static/css/main.07346015.css.map",
+    "main.6a5d4f36.js.map": "/agency-landing-page/static/js/main.6a5d4f36.js.map",
     "453.a6264939.chunk.js.map": "/agency-landing-page/static/js/453.a6264939.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.996c8933.css",
-    "static/js/main.8fa4f7c8.js"
+    "static/css/main.07346015.css",
+    "static/js/main.6a5d4f36.js"
   ]
 }
