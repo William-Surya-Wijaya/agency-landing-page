@@ -9,6 +9,8 @@ import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import BlogSection from "./components/BlogSection";
+import FAQSection from "./components/FAQSection";
 
 const App = () => {
   return (
@@ -20,6 +22,8 @@ const App = () => {
       <Overview />
       <Pricing />
       <Testimonials />
+      <BlogSection />
+      <FAQSection/>
       <Footer />
       <ScrollToTop />
     </div>

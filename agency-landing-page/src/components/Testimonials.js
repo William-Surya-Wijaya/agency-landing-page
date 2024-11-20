@@ -86,12 +86,24 @@ const Testimonials = () => {
     swipeToSlide: true,
     draggable: true,
     arrows: false,
+    autoplay: true,
+    speed: 500,
+    autoplaySpeed: 3000,
     responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerPadding: "80px",
+        },
+      },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 1,
           slidesToScroll: 1,
+          centerPadding: "0px",
         },
       },
     ],
@@ -104,8 +116,8 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="py-16 bg-gray-100 text-center">
-      <h2 className="text-2xl font-bold text-gray-800 mb-2">
+    <section className="py-24 bg-gray-100 text-center">
+      <h2 className="text-4xl font-bold text-gray-800 mb-2">
         What Clients Say About Us
       </h2>
       <p className="text-gray-600 mb-8">Customer Testimonial</p>
@@ -125,10 +137,10 @@ const Testimonials = () => {
                     className="w-12 h-12 rounded-full mr-4"
                   />
                   <div>
-                    <h4 className="text-sm font-bold text-gray-800">
+                    <h4 className="text-md font-bold text-gray-800 text-start">
                       {item.name}
                     </h4>
-                    <p className="text-xs text-gray-500">{item.username}</p>
+                    <p className="text-xs font-bold text-gray-500 text-start text-indigo-400">{item.username}</p>
                   </div>
                 </div>
               </div>

@@ -49,7 +49,7 @@ const Features = () => {
 
   return (
     <section className="relative pt-16 bg-gray-100 text-center -mt-24">
-      <h2 className="text-3xl font-bold mb-4">What the Features of Product</h2>
+      <h2 className="text-4xl font-bold mb-4">What the Features of Product</h2>
       <p className="text-gray-600 mb-12">Features are highlighted here</p>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-screen-xl mx-auto px-6">
         {features.map((feature, index) => (
@@ -84,7 +84,7 @@ const Features = () => {
           />
           <div className="flex flex-col text-start align-start">
             <div className="text-indigo-600 font-bold mb-4">Core Features</div>
-            <div className="text-3xl font-bold mb-10">Smart Jackpots that you may love this</div>
+            <div className="text-4xl font-bold mb-10">Smart Jackpots that you may love this</div>
             <div className="flex flex-col gap-10">
               {coreFeatures.map((feature, index) => (
                 <div
@@ -116,7 +116,7 @@ const Features = () => {
         <div className="max-w-screen-xl mx-auto px-6 flex flex-col-reverse lg:flex-row justify-center items-center gap-10 md:gap-20">
           <div className="flex flex-col text-start align-start">
             <div className="text-indigo-600 font-bold mb-4">Behind the design</div>
-            <div className="text-3xl font-bold mb-10">Code that we used to built the website with integrating apps</div>
+            <div className="text-4xl font-bold mb-10">Code that we used to built the website with integrating apps</div>
             <div className="leading-8 mb-10">Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever. Get your tests delivered at let home collect sample.</div>
             <div class="flex">
               <button className="bg-indigo-950 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-700">
