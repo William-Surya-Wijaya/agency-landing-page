@@ -49,7 +49,7 @@ const Features = () => {
 
   return (
     <section className="relative pt-16 bg-gray-100 text-center -mt-24">
-      <h2 className="text-4xl font-bold mb-4">What the Features of Product</h2>
+      <h2 className="text-4xl font-bold mb-4 md:text-3xl">What the Features of Product</h2>
       <p className="text-gray-600 mb-12">Features are highlighted here</p>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-screen-xl mx-auto px-6">
         {features.map((feature, index) => (

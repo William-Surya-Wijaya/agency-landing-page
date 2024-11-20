@@ -30,7 +30,7 @@ const TabbedFeatures = () => {
     <section className="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8">
       {/* Header */}
       <div className="text-center mb-16 mt-8">
-        <h2 className="text-4xl font-bold mb-4">What the Features of Product</h2>
+        <h2 className="text-4xl font-bold mb-4 md:text-3xl">What the Features of Product</h2>
         <p className="text-gray-600 text-sm sm:text-base">Introducing all screen details</p>
       </div>
 

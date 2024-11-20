@@ -33,7 +33,7 @@ const FAQSection = () => {
 
   return (
     <section className="relative pt-16 pb-32 bg-white text-center">
-      <h2 className="text-4xl font-bold mb-4">Frequently Ask Question</h2>
+      <h2 className="text-4xl font-bold mb-4 md:text-3xl">Frequently Ask Question</h2>
       <p className="text-gray-600 mb-12">Ask your question and meet</p>
       <div className="max-w-screen-xl mx-auto px-4 flex flex-col-reverse md:flex-row gap-12">
         {/* Left Section */}

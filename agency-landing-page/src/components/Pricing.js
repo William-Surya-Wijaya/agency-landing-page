@@ -37,7 +37,7 @@ const PricingSection = () => {
     <section className="pt-16 pb-32 bg-gray-50 -mt-40">
       {/* Header */}
       <div className="text-center mb-12 mt-40">
-        <h2 className="text-4xl font-bold mb-4">What deal suits you perfect</h2>
+        <h2 className="text-4xl font-bold mb-4 md:text-3xl">What deal suits you perfect</h2>
         <p className="text-gray-600">Meet our pricing plan</p>
       </div>
 
