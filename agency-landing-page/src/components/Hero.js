@@ -12,10 +12,10 @@ const Hero = () => {
       {/* Background Icons */}
       <div className="absolute inset-0 overflow-hidden md:block hidden">
         <div className="absolute left-top-icon-position opacity-10 animate-wind">
-          <i className="bi bi-bell text-6xl"></i>
+          <i className="bi bi-bell text-5xl"></i>
         </div>
         <div className="absolute right-top-icon-position opacity-10 animate-wind">
-        <i class="bi bi-chat-dots text-6xl"></i>
+        <i class="bi bi-chat-dots text-5xl"></i>
         </div>
         <div className="absolute waves-position">
           <img src={waves} alt="Waves" className="w-46 h-38" />

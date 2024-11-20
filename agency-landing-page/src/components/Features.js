@@ -75,8 +75,8 @@ const Features = () => {
       </div>
 
       {/* Core Features Section */}
-      <div className="py-16 bg-gray-50 text-center mt-24">
-        <div className="max-w-screen-xl mx-auto px-6 flex justify-center items-center gap-20">
+      <div className="py-24 bg-gray-50 text-center mt-24">
+        <div className="max-w-screen-xl mx-auto px-6 flex flex-col lg:flex-row justify-center items-center gap-10 md:gap-20">
           <img
             src="https://via.placeholder.com/800x400"
             alt="Hero Section Main"
@@ -112,8 +112,8 @@ const Features = () => {
       </div>
 
       {/* Core Features Section */}
-      <div className="py-16 bg-gray-50 text-center">
-        <div className="max-w-screen-xl mx-auto px-6 flex justify-center items-center gap-20">
+      <div className="pb-24 bg-gray-50 text-center">
+        <div className="max-w-screen-xl mx-auto px-6 flex flex-col-reverse lg:flex-row justify-center items-center gap-10 md:gap-20">
           <div className="flex flex-col text-start align-start">
             <div className="text-indigo-600 font-bold mb-4">Behind the design</div>
             <div className="text-3xl font-bold mb-10">Code that we used to built the website with integrating apps</div>

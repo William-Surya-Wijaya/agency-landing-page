@@ -1,22 +1,141 @@
 import React from "react";
+import Slider from "react-slick";
+
+const testimonials = [
+  {
+    name: "Cherice Justin",
+    username: "@cherice.me",
+    testimonial: "Thank you for all your help. Your service was excellent and very FAST.",
+    image: "https://via.placeholder.com/50",
+  },
+  {
+    name: "Minnie Horn",
+    username: "@hello.mimmie",
+    testimonial: "You got me the best place ever in just a few moments after I spoke to you.",
+    image: "https://via.placeholder.com/50",
+  },
+  {
+    name: "Thais Carballal",
+    username: "@myself.thais",
+    testimonial: "Everything worked out perfectly with all the bookings, and your booking was very quick and professional.",
+    image: "https://via.placeholder.com/50",
+  },
+  {
+    name: "Veona Watson",
+    username: "@hi.veona",
+    testimonial: "Your patience with me as I continuously changed my plans is to be commended.",
+    image: "https://via.placeholder.com/50",
+  },
+  {
+    name: "Cherice Justin",
+    username: "@cherice.me",
+    testimonial: "Thank you for all your help. Your service was excellent and very FAST.",
+    image: "https://via.placeholder.com/50",
+  },
+  {
+    name: "Minnie Horn",
+    username: "@hello.mimmie",
+    testimonial: "You got me the best place ever in just a few moments after I spoke to you.",
+    image: "https://via.placeholder.com/50",
+  },
+  {
+    name: "Thais Carballal",
+    username: "@myself.thais",
+    testimonial: "Everything worked out perfectly with all the bookings, and your booking was very quick and professional.",
+    image: "https://via.placeholder.com/50",
+  },
+  {
+    name: "Veona Watson",
+    username: "@hi.veona",
+    testimonial: "Your patience with me as I continuously changed my plans is to be commended.",
+    image: "https://via.placeholder.com/50",
+  },
+  {
+    name: "Cherice Justin",
+    username: "@cherice.me",
+    testimonial: "Thank you for all your help. Your service was excellent and very FAST.",
+    image: "https://via.placeholder.com/50",
+  },
+  {
+    name: "Minnie Horn",
+    username: "@hello.mimmie",
+    testimonial: "You got me the best place ever in just a few moments after I spoke to you.",
+    image: "https://via.placeholder.com/50",
+  },
+  {
+    name: "Thais Carballal",
+    username: "@myself.thais",
+    testimonial: "Everything worked out perfectly with all the bookings, and your booking was very quick and professional.",
+    image: "https://via.placeholder.com/50",
+  },
+  {
+    name: "Veona Watson",
+    username: "@hi.veona",
+    testimonial: "Your patience with me as I continuously changed my plans is to be commended.",
+    image: "https://via.placeholder.com/50",
+  },
+];
 
 const Testimonials = () => {
-  const testimonials = [
-    { name: "John Doe", feedback: "Amazing service, highly recommend!" },
-    { name: "Jane Smith", feedback: "Professional and efficient!" },
-  ];
+  const settings = {
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: "160px",
+    swipeToSlide: true,
+    draggable: true,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
+  // Group testimonials into pairs
+  const groupedTestimonials = testimonials.reduce((acc, _, index, arr) => {
+    if (index % 2 === 0) acc.push(arr.slice(index, index + 2));
+    return acc;
+  }, []);
 
   return (
-    <section id="testimonials" className="py-16 bg-gray-100 text-center">
-      <h2 className="text-3xl font-bold mb-8">What Our Clients Say</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {testimonials.map((testimonial, index) => (
-          <div key={index} className="bg-white p-6 rounded-lg shadow-md">
-            <p>"{testimonial.feedback}"</p>
-            <h3 className="font-bold mt-4">{testimonial.name}</h3>
+    <section className="py-16 bg-gray-100 text-center">
+      <h2 className="text-2xl font-bold text-gray-800 mb-2">
+        What Clients Say About Us
+      </h2>
+      <p className="text-gray-600 mb-8">Customer Testimonial</p>
+      <Slider {...settings}>
+        {groupedTestimonials.map((group, index) => (
+          <div key={index} className="flex flex-col justify-center items-start gap-6">
+            {group.map((item, i) => (
+              <div
+                key={i}
+                className="bg-white rounded-lg p-6 max-w-lg mx-auto mt-4"
+              >
+                <p className="text-gray-700 text-sm mb-4 text-start">{item.testimonial}</p>
+                <div className="flex items-center">
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="w-12 h-12 rounded-full mr-4"
+                  />
+                  <div>
+                    <h4 className="text-sm font-bold text-gray-800">
+                      {item.name}
+                    </h4>
+                    <p className="text-xs text-gray-500">{item.username}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         ))}
-      </div>
+      </Slider>
     </section>
   );
 };

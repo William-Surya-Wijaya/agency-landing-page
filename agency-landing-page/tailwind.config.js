@@ -29,6 +29,14 @@ module.exports = {
           "0%": { transform: "rotate(0deg)" },
           "100%": { transform: "rotate(360deg)" },
         },
+        fadeIn: {
+          "0%": { opacity: 0, transform: "translateY(20px)" },
+          "100%": { opacity: 1, transform: "translateY(0)" },
+        },
+        slideIn: {
+          "0%": { width: "0%" },
+          "100%": { width: "100%" },
+        },
       },
       animation: {
         "bounce-idle": "bounceIdle 2s infinite",
@@ -36,6 +44,8 @@ module.exports = {
         paperplane: "paperplane 4s ease-in-out infinite",
         wind: "wind 42s ease-in-out infinite",
         spinInfinite: "spinInfinite 28s linear infinite",
+        "fade-in": "fadeIn 0.5s ease-out",
+        "slide-in": "slideIn 0.4s ease-out",
       },
     },
   },

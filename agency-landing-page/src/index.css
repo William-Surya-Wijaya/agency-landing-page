@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "swiper/swiper-bundle.css";
+@import "slick-carousel/slick/slick.css"; 
+@import "slick-carousel/slick/slick-theme.css";
+
 
 body {
   margin: 0;
@@ -58,4 +62,8 @@ body {
 .right-top-icon-position{
   top: 16%;
   right: 12%;
+}
+
+.undertabs{
+  height: 2px;
 }
