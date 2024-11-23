@@ -67,3 +67,13 @@ body {
 .undertabs{
   height: 2px;
 }
+
+@media (max-width: 768px) {
+  .custom-slider .slick-slide {
+    margin-right: 10px;
+  }
+
+  .custom-slider .slick-list {
+    margin-right: -10px;
+  }
+}

@@ -66,11 +66,11 @@ const PricingSection = () => {
       </div>
 
       {/* Pricing Cards */}
-      <div className="grid sm:grid-cols-2 gap-8 max-w-screen-lg mx-auto px-24">
+      <div className="grid sm:grid-cols-2 gap-8 max-w-screen-lg mx-auto md:px-24">
         {plans.map((plan) => (
           <div
             key={plan.id}
-            className={`relative bg-white py-6 px-12 rounded-lg border hover:shadow-lg transition-all duration-300 ${
+            className={`relative bg-white py-6 px-6 mx-12 md:px-12 rounded-lg border hover:shadow-lg transition-all duration-300 ${
               plan.recommended
                 ? "border-indigo-500 scale-105"
                 : "border-gray-200 hover:scale-105"

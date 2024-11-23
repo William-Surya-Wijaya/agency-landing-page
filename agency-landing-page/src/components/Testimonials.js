@@ -95,7 +95,7 @@ const Testimonials = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          centerPadding: "80px",
+          centerPadding: "160px",
         },
       },
       {
@@ -127,7 +127,7 @@ const Testimonials = () => {
             {group.map((item, i) => (
               <div
                 key={i}
-                className="bg-white rounded-lg p-6 max-w-lg mx-auto mt-4"
+                className="bg-white rounded-lg p-6 max-w-lg mx-4 md:mx-2 mt-4"
               >
                 <p className="text-gray-700 text-sm mb-4 text-start">{item.testimonial}</p>
                 <div className="flex items-center">
